@@ -63,6 +63,26 @@ body {
   z-index: 1001 !important;
 }
 
+.nav-dropdown-menu {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(7, 93, 169, 0.18) !important;
+  box-shadow: 0 25px 50px -12px rgba(7, 72, 131, 0.25), 0 0 0 1px rgba(7, 93, 169, 0.08) !important;
+  opacity: 1 !important;
+}
+
+.nav-dropdown-item {
+  background-color: #fffdf7 !important;
+  border: 1px solid #e9dfc8 !important;
+  transition: all 0.2s ease !important;
+}
+
+.nav-dropdown-item:hover {
+  background-color: #eff6ff !important;
+  border-color: #075da9 !important;
+  transform: translateX(3px) !important;
+}
+
 /* Custom Gradients */
 .gradient-blue {
   background: linear-gradient(135deg, #074883 0%, #075da9 50%, #0b75c9 100%);
