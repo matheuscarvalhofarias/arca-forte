@@ -149,7 +149,7 @@
           <a href="#servicos" class="hover:text-[#075da9] transition-colors">Serviços</a>
           <a href="#estrutura" class="hover:text-[#075da9] transition-colors">Estrutura</a>
           <a href="#transformacao" class="hover:text-[#075da9] transition-colors">Banho & Tosa</a>
-          <a href="#petshop" class="hover:text-[#075da9] transition-colors">Pet Shop</a>
+          <a href="#consulta" class="hover:text-[#075da9] transition-colors">Consulta & Prevenção</a>
           <a href="#calculadora" class="hover:text-[#075da9] transition-colors">Simulador</a>
           <a href="#faq" class="hover:text-[#075da9] transition-colors">Dúvidas</a>
         </nav>
@@ -177,7 +177,7 @@
         <a href="#servicos" class="py-2.5 px-3.5 rounded-xl hover:bg-[#075da9]/10 hover:text-[#075da9] transition-colors">Serviços Clínicos</a>
         <a href="#estrutura" class="py-2.5 px-3.5 rounded-xl hover:bg-[#075da9]/10 hover:text-[#075da9] transition-colors">Estrutura & Cirurgia</a>
         <a href="#transformacao" class="py-2.5 px-3.5 rounded-xl hover:bg-[#075da9]/10 hover:text-[#075da9] transition-colors">Banho & Tosa Especializado</a>
-        <a href="#petshop" class="py-2.5 px-3.5 rounded-xl hover:bg-[#075da9]/10 hover:text-[#075da9] transition-colors">Pet Shop & Rações</a>
+        <a href="#consulta" class="py-2.5 px-3.5 rounded-xl hover:bg-[#075da9]/10 hover:text-[#075da9] transition-colors">Consulta & Prevenção</a>
         <a href="#calculadora" class="py-2.5 px-3.5 rounded-xl hover:bg-[#075da9]/10 hover:text-[#075da9] transition-colors">Simulador de Cuidados</a>
         <a href="#faq" class="py-2.5 px-3.5 rounded-xl hover:bg-[#075da9]/10 hover:text-[#075da9] transition-colors">Perguntas Frequentes</a>
       </nav>
@@ -743,40 +743,84 @@
     </div>
   </section>
 
-  <!-- PET SHOP E PRODUTOS EM CASA -->
-  <section id="petshop" class="py-24 bg-white border-t border-[#e9dfc8]">
+  <!-- CONSULTA & SAÚDE PREVENTIVA -->
+  <section id="consulta" class="py-24 bg-white border-t border-[#e9dfc8] relative">
+    <div id="petshop" class="absolute -top-24"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <div class="lg:col-span-7 space-y-6">
-          <span class="text-xs font-black uppercase tracking-widest text-[#6f3f13] bg-[#6f3f13]/10 px-3.5 py-1.5 rounded-full">
-            Pet Shop Arca Forte
+          <span class="text-xs font-black uppercase tracking-widest text-[#075da9] bg-[#075da9]/10 px-4 py-1.5 rounded-full inline-flex items-center gap-2">
+            <i data-lucide="stethoscope" class="w-3.5 h-3.5"></i>
+            Medicina Preventiva & Check-up
           </span>
-          <h2 class="text-3xl sm:text-4xl font-black font-display text-[#12253B] leading-tight">
-            Produtos para manter o cuidado também em casa
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-display text-[#12253B] leading-tight">
+            Quando foi a última consulta do seu pet?
           </h2>
-          <p class="text-[#5f6f7e] text-base leading-relaxed">
-            Encontre rações das melhores marcas e produtos para a rotina do seu cão ou gato, com a praticidade de contar com saúde clínica e pet shop no mesmo lugar.
+          <p class="text-[#5f6f7e] text-base sm:text-lg leading-relaxed">
+            Check-ups regulares ajudam a prevenir doenças silenciosas, atualizar vacinas e garantir muito mais qualidade de vida e longevidade para o seu amigo de quatro patas.
+          </p>
+          <p class="text-[#5f6f7e] text-sm sm:text-base leading-relaxed">
+            Não espere seu pet manifestar sintomas de dor ou desânimo. Na <strong class="text-[#12253B]">Arca Forte</strong>, realizamos avaliações clínicas completas, exames diagnósticos preventivos e orientação nutricional individualizada para cada fase da vida do seu cão ou gato.
           </p>
 
-          <div class="flex flex-wrap gap-2.5 pt-2">
-            <span class="px-4 py-2 rounded-full bg-[#FFF9E9] border border-[#e9dfc8] text-xs font-bold text-[#12253B]">Rações Super Premium</span>
-            <span class="px-4 py-2 rounded-full bg-[#FFF9E9] border border-[#e9dfc8] text-xs font-bold text-[#12253B]">Antipulgas & Vermífugos</span>
-            <span class="px-4 py-2 rounded-full bg-[#FFF9E9] border border-[#e9dfc8] text-xs font-bold text-[#12253B]">Acessórios & Coleiras</span>
-            <span class="px-4 py-2 rounded-full bg-[#FFF9E9] border border-[#e9dfc8] text-xs font-bold text-[#12253B]">Higiene & Estética</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#FFF9E9] border border-[#e9dfc8]">
+              <div class="w-8 h-8 rounded-full bg-[#075da9]/10 text-[#075da9] flex items-center justify-center shrink-0">
+                <i data-lucide="heart-pulse" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-[#12253B]">Diagnóstico Precoce</span>
+                <span class="text-[11px] text-[#5f6f7e]">Prevenção de doenças graves</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#FFF9E9] border border-[#e9dfc8]">
+              <div class="w-8 h-8 rounded-full bg-[#075da9]/10 text-[#075da9] flex items-center justify-center shrink-0">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-[#12253B]">Vacinas & Vermífugos</span>
+                <span class="text-[11px] text-[#5f6f7e]">Imunização completa em dia</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#FFF9E9] border border-[#e9dfc8]">
+              <div class="w-8 h-8 rounded-full bg-[#075da9]/10 text-[#075da9] flex items-center justify-center shrink-0">
+                <i data-lucide="clipboard-check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-[#12253B]">Exames & Procedimentos</span>
+                <span class="text-[11px] text-[#5f6f7e]">Laboratório e centro cirúrgico</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-[#FFF9E9] border border-[#e9dfc8]">
+              <div class="w-8 h-8 rounded-full bg-[#075da9]/10 text-[#075da9] flex items-center justify-center shrink-0">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="block text-xs font-bold text-[#12253B]">Cuidado Humanizado</span>
+                <span class="text-[11px] text-[#5f6f7e]">Acolhimento sem estresse</span>
+              </div>
+            </div>
           </div>
 
-          <div class="pt-4">
-            <a href="https://wa.me/556136132601?text=Ol%C3%A1!%20Quero%20saber%20sobre%20ra%C3%A7%C3%B5es%20e%20produtos%20dispon%C3%ADveis%20na%20Arca%20Forte." target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-[#075da9] hover:text-[#0b75c9] group">
-              <span>Consultar disponibilidade pelo WhatsApp</span>
-              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a href="https://wa.me/556136132601?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20preventiva%20para%20o%20meu%20pet%20na%20Arca%20Forte." target="_blank" class="btn-shimmer inline-flex items-center gap-2.5 bg-[#075da9] hover:bg-[#0b75c9] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-lg shadow-[#075da9]/25 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+              <i data-lucide="calendar" class="w-4 h-4 text-amber-300"></i>
+              <span>Agendar Consulta Preventiva</span>
+            </a>
+            <a href="tel:+556136132601" class="inline-flex items-center gap-2 text-sm font-bold text-[#075da9] hover:text-[#0b75c9] py-2 transition-colors">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+              <span>(61) 3613-2601</span>
             </a>
           </div>
         </div>
 
         <div class="lg:col-span-5 relative">
-          <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-            <img src="assets/consulta.png" alt="Cuidado e produtos no Pet Shop Arca Forte" class="w-full h-[360px] object-cover">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white group hover:shadow-3xl transition-all duration-300">
+            <img src="assets/consulta.png" alt="Quando foi a última consulta do seu pet? - Arca Forte Clínica Veterinária" class="w-full h-auto max-h-[580px] object-contain sm:object-cover mx-auto">
           </div>
         </div>
 
