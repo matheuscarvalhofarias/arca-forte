@@ -1,11 +1,29 @@
 // AuraPet - Modern Senior-Crafted Client Architecture
 // Zero errors, high-responsiveness, elegant micro-interactions
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Initialize Lucide Icons if loaded
-  if (window.lucide) {
-    window.lucide.createIcons();
+function initIcons() {
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    try {
+      window.lucide.createIcons();
+      return true;
+    } catch (e) {
+      console.warn('Lucide createIcons notice:', e);
+    }
   }
+  return false;
+}
+
+initIcons();
+
+document.addEventListener('DOMContentLoaded', () => {
+  initIcons();
+  let retries = 0;
+  const timer = setInterval(() => {
+    retries++;
+    if (initIcons() || retries > 25) {
+      clearInterval(timer);
+    }
+  }, 120);
 
   initNavigation();
   initSpaCalculator();
@@ -706,3 +724,8 @@ function showToast(title, message, iconName = 'bell') {
   // Auto remove after 5s
   setTimeout(closeToast, 5000);
 }
+
+
+window.addEventListener('load', () => {
+  initIcons();
+});
