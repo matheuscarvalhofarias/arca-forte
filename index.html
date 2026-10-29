@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://arcaforte.netlify.app/">
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/logo-arca-forte.jpg" type="image/jpeg">
+  <link rel="icon" href="assets/logo-arca-forte.webp" type="image/webp">
 
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
@@ -22,58 +22,28 @@
   <meta property="og:description"
     content="Cuidado completo para cães e gatos: atendimento veterinário, cirurgias, internação, vacinas, exames, banho e tosa premium e pet shop.">
   <meta property="og:url" content="https://arcaforte.netlify.app/">
-  <meta property="og:image" content="assets/atendimento.png">
+  <meta property="og:image" content="assets/atendimento.webp">
 
-  <!-- Google Fonts: DM Sans & Nunito -->
+  <!-- Preload Hero LCP Candidate Image -->
+  <link rel="preload" as="image" href="assets/atendimento.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Google Fonts with Preconnect and Non-Blocking Load -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,300..1000;1,300..1000&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap">
+  </noscript>
 
-  <!-- Tailwind CSS via CDN with Arca Forte Color Tokens -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              950: '#062d52',
-              900: '#074883',
-              850: '#075da9', // Primary Blue
-              800: '#0868be',
-              700: '#0b75c9', // Vibrant Blue
-              600: '#1e8eeb',
-              500: '#3ba2f6',
-              100: '#dbeafe',
-              50: '#eff6ff',
-              brown: '#6f3f13' // Arca Forte Brown
-            },
-            cream: {
-              50: '#fffdf7',
-              100: '#fff9e9', // Base Cream
-              200: '#fff1c9', // Soft Golden Cream
-              300: '#f8e2a9',
-              border: '#e9dfc8'
-            },
-            ink: {
-              900: '#12253b', // Deep Navy
-              700: '#2c3e50',
-              500: '#5f6f7e', // Muted Slate
-              300: '#94a3b8'
-            }
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Custom Stylesheet -->
+  <!-- Compiled Tailwind CSS & Custom Stylesheet -->
+  <link rel="stylesheet" href="./src/tailwind.min.css">
   <link rel="stylesheet" href="./src/style.css">
+
+  <!-- Lucide Icons (Deferred for Maximum Performance) -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -147,7 +117,8 @@
 
         <!-- Logo -->
         <a href="#inicio" class="flex items-center gap-3.5 group">
-          <img src="assets/logo-arca-forte.jpg" alt="Logotipo Arca Forte Clínica Veterinária"
+          <img src="assets/logo-arca-forte.webp" alt="Logotipo Arca Forte Clínica Veterinária"
+            width="52" height="52" loading="eager" decoding="async"
             class="w-13 h-13 rounded-full object-cover border-2 border-[#075da9]/20 shadow-md group-hover:scale-105 transition-transform"
             style="width: 52px; height: 52px;">
           <div>
@@ -395,8 +366,10 @@
           <!-- Main Image Frame with Floating Cards -->
           <div class="relative mx-auto max-w-md lg:max-w-none">
             <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-              <img src="assets/atendimento.png"
+              <img src="assets/atendimento.webp"
                 alt="Atendimento veterinário Arca Forte para cães e gatos em Águas Lindas de Goiás"
+                width="540" height="460"
+                loading="eager" fetchpriority="high" decoding="async"
                 class="w-full h-[460px] object-cover hover:scale-105 transition-transform duration-700">
               <div class="absolute inset-0 bg-gradient-to-t from-[#074883]/80 via-transparent to-transparent"></div>
 
@@ -542,14 +515,18 @@
 
             <!-- CAMADA DEPOIS (Fundo: Cachorro Limpo e Tosado) -->
             <div class="absolute inset-0 w-full h-full">
-              <img id="grooming-ba-after" src="./Gemini_Generated_Image_3opnr3opnr3opnr3.jpg"
-                alt="Pet após tosa artística e hidratação na Arca Forte" class="w-full h-full object-cover">
+              <img id="grooming-ba-after" src="./Gemini_Generated_Image_3opnr3opnr3opnr3.webp"
+                alt="Pet após tosa artística e hidratação na Arca Forte"
+                width="900" height="480" loading="lazy" decoding="async"
+                class="w-full h-full object-cover">
             </div>
 
             <!-- CAMADA ANTES (Topo: Cachorro Sujo, recortado pelo slider) -->
             <div id="ba-before-layer" class="ba-before-layer">
-              <img id="grooming-ba-before" src="./Gemini_Generated_Image_3v2ln03v2ln03v2l.jpg"
-                alt="Pet antes dos cuidados de tosa e banho" class="w-full h-full object-cover">
+              <img id="grooming-ba-before" src="./Gemini_Generated_Image_3v2ln03v2ln03v2l.webp"
+                alt="Pet antes dos cuidados de tosa e banho"
+                width="900" height="480" loading="lazy" decoding="async"
+                class="w-full h-full object-cover">
             </div>
 
             <!-- Divisor Deslizante com Botão Central -->
@@ -808,12 +785,15 @@
         <!-- Image Stack -->
         <div class="lg:col-span-6 relative">
           <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-            <img src="assets/vet.jpg" alt="Atendimento preventivo e cuidado veterinário na Arca Forte"
+            <img src="assets/vet.webp" alt="Atendimento preventivo e cuidado veterinário na Arca Forte"
+              width="600" height="580" loading="lazy" decoding="async"
               class="w-full h-[580px] object-cover">
           </div>
           <div
             class="absolute -bottom-8 -right-6 z-20 w-66 rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white hidden sm:block">
-            <img src="assets/vacinacao.jpg" alt="Vacinação de pet na Arca Forte" class="w-full h-44 object-cover">
+            <img src="assets/vacinacao.webp" alt="Vacinação de pet na Arca Forte"
+              width="264" height="176" loading="lazy" decoding="async"
+              class="w-full h-44 object-cover">
           </div>
         </div>
 
@@ -980,8 +960,9 @@
         <div class="lg:col-span-5 relative">
           <div
             class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white group hover:shadow-3xl transition-all duration-300">
-            <img src="assets/consulta.png"
+            <img src="assets/consulta.webp"
               alt="Quando foi a última consulta do seu pet? - Arca Forte Clínica Veterinária"
+              width="600" height="580" loading="lazy" decoding="async"
               class="w-full h-auto max-h-[580px] object-contain sm:object-cover mx-auto">
           </div>
         </div>
@@ -1471,7 +1452,8 @@
         <!-- Brand column -->
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <img src="assets/logo-arca-forte.jpg" alt="Logotipo Arca Forte"
+            <img src="assets/logo-arca-forte.webp" alt="Logotipo Arca Forte"
+              width="48" height="48" loading="lazy" decoding="async"
               class="w-12 h-12 rounded-full object-cover border-2 border-white/20 shadow-md">
             <div>
               <span class="text-xl font-black font-display text-white">
@@ -1806,7 +1788,7 @@
   </div>
 
   <!-- Scripts -->
-  <script src="./src/main.js"></script>
+  <script src="./src/main.js" defer></script>
 </body>
 
 </html>
